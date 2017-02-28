@@ -17,3 +17,5 @@ dependency-reduced-pom.xml
 kube-cluster/kubernetes
 apps/modifiedFabric8.json
 git-clones
+javac-services.0.log.lck
+settings.json
