@@ -20,12 +20,18 @@ import io.swagger.annotations.Api;
 @Api("/sayHello")
 public class HelloServiceImpl implements HelloService {
 
+    private String message;
+
+    public HelloServiceImpl(String message) {
+        this.message = message;
+    }
+
     public String welcome() {
         return "Welcome to the CXF RS Spring Boot application, append /{name} to call the hello service";
     }
 
     public String sayHello(String a) {
-        return "Hello " + a + ", Welcome to CXF RS Spring Boot World!!!";
+        return message + " " + a + ", Welcome to CXF RS Spring Boot World!!!";
     }
     
 }
